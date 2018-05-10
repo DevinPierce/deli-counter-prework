@@ -9,4 +9,5 @@ def line(katz_deli)
     announcement += " #{i+1}. #{name}"
   end
   puts announcement
+  end
 end
