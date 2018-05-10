@@ -5,6 +5,8 @@ def line(katz_deli)
     puts 'The line is currently empty.'
   end
   announcement = "The line is currently:"
-  for name in katz_deli do
-    announcement += " "
+  katz_deli.each_with_index do |name, i|
+    announcement += " #{i+1}. #{name}"
+  end
+  puts announcement
 end
